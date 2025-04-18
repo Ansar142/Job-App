@@ -1,5 +1,7 @@
 package com.example.JobSeekingApp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +12,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
+@Entity
 public class JobPost {
+        @Id
         public int postId ;
         public String postDesc;
         public String postProfile;
